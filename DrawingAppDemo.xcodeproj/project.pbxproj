@@ -16,6 +16,8 @@
 		785697F923DED34500E2CC3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 785697F823DED34500E2CC3A /* main.m */; };
 		7856980323DED34500E2CC3A /* DrawingAppDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7856980223DED34500E2CC3A /* DrawingAppDemoTests.m */; };
 		7856980E23DED34500E2CC3A /* DrawingAppDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7856980D23DED34500E2CC3A /* DrawingAppDemoUITests.m */; };
+		78B5216623DED81400539405 /* DrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5216523DED81400539405 /* DrawingView.m */; };
+		78B5216A23DEDA4100539405 /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5216923DEDA4100539405 /* Line.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		7856980923DED34500E2CC3A /* DrawingAppDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingAppDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7856980D23DED34500E2CC3A /* DrawingAppDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingAppDemoUITests.m; sourceTree = "<group>"; };
 		7856980F23DED34500E2CC3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78B5216423DED81400539405 /* DrawingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingView.h; sourceTree = "<group>"; };
+		78B5216523DED81400539405 /* DrawingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingView.m; sourceTree = "<group>"; };
+		78B5216823DEDA4100539405 /* Line.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		78B5216923DEDA4100539405 /* Line.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,8 @@
 		785697E523DED34100E2CC3A /* DrawingAppDemo */ = {
 			isa = PBXGroup;
 			children = (
+				78B5216723DEDA2F00539405 /* models */,
+				78B5216323DED7F400539405 /* views */,
 				785697E623DED34100E2CC3A /* AppDelegate.h */,
 				785697E723DED34100E2CC3A /* AppDelegate.m */,
 				785697E923DED34100E2CC3A /* SceneDelegate.h */,
@@ -135,6 +143,24 @@
 				7856980F23DED34500E2CC3A /* Info.plist */,
 			);
 			path = DrawingAppDemoUITests;
+			sourceTree = "<group>";
+		};
+		78B5216323DED7F400539405 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				78B5216423DED81400539405 /* DrawingView.h */,
+				78B5216523DED81400539405 /* DrawingView.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		78B5216723DEDA2F00539405 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				78B5216823DEDA4100539405 /* Line.h */,
+				78B5216923DEDA4100539405 /* Line.m */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				785697EE23DED34100E2CC3A /* ViewController.m in Sources */,
+				78B5216A23DEDA4100539405 /* Line.m in Sources */,
 				785697E823DED34100E2CC3A /* AppDelegate.m in Sources */,
 				785697F923DED34500E2CC3A /* main.m in Sources */,
+				78B5216623DED81400539405 /* DrawingView.m in Sources */,
 				785697EB23DED34100E2CC3A /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
